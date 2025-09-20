@@ -1,0 +1,181 @@
+/* Global (semuanya terdampak) */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Navbar container pakai flex */
+.navbar .container-fluid {
+  display: flex;
+  /* brand kiri / tengah, menu kanan */
+  justify-content: space-between; 
+  align-items: center;
+  position: relative;
+}
+
+/* Brand */
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mobile: brand di tengah */
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    position: relative;
+    left: 0;
+    transform: none;
+    text-align: center;
+  }
+
+  /* Toggler tetap di kanan */
+  .navbar-toggler {
+    position: relative;
+    margin-left: 0;
+  }
+}
+
+/* Permasing-masing kegunaan */
+
+/* Ini untuk navbar */
+.custom-navbar {
+  background-color: #140152;
+}
+
+/* Ini untuk toggler nya tapi bordernya doang (garis 3 burger) */
+.custom-toggler {
+  border-color: white;
+}
+
+/* Ini untuk toggler tapi karena bootstrap icon jadi ini icon */
+/* Icon tiga garis */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+/* Ini untuk logo teks atau brand */
+.custom-navbar .navbar-brand {
+  color: white;
+  font-size: 2rem;
+}
+
+/* untuk hover didalam navbar */
+.custom-navbar .navbar-brand:hover {
+  color: #ffeedd;
+}
+
+/* Biar teks link navbar di kiri */
+.custom-navbar .navbar-left {
+  text-align: left;
+}
+
+/* ini untuk menu */
+.custom-navbar .nav-link {
+  /* warna default */
+  color: white;
+  /* ukuran font menu */
+  font-size: 1.1rem;
+  margin-left: 0.95rem;
+  /* animasi */
+  transition: color 0.3s, transform 0.3s;
+}
+
+/* Untuk hover link di menu */
+.custom-navbar .nav-link:hover {
+  color: #ffeedd;
+  background-color: #3a0ca3;
+  border-radius: 10px;
+  padding: 0.35rem 0.75rem;
+  transform: scale(1.05);
+}
+
+/* Ini untuk teks menu yang didalam box */
+.hero-container {
+  /* padding atas & bawah, responsive bisa ditambah media query */
+  padding: 4rem 1rem;           
+  /* center text */
+  text-align: center;           
+}
+
+.hero {
+  /* center section */
+  margin: 0 auto;               
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.hero-title {
+  /* ukuran judul */
+  font-size: 3rem;              
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.hero-subtitle {
+  /* ukuran deskripsi */
+  font-size: 1.25rem;           
+  font-weight: 400;
+  color: black;
+  line-height: 1.6;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(204, 181, 181, 0.15);
+  background-color: #140152;
+}
+
+.card-title {
+  font-size: 2rem;
+}
+
+h1 {
+  color: white;
+}
+
+/* #Menu untuk semua menu di section menu*/
+#menu h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  /* color: white; */
+  margin-bottom: 1.5rem;
+}
+
+/* Custom Hover jadi ga bawaan bootstrap */
+.custom-hover {
+  transition: all 0.25s ease-in-out;
+}
+
+/* Ini khusus hover doang bener bener pas cursor di arahkan (menu)*/
+.custom-hover:hover {
+  transform: scale(1.05);
+}
+
+.wa-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.wa-button:hover {
+  background-color: #1ebe5b;
+}
+
+.menu-card .card-title {
+  color: white;
+  font-weight: bold;
+}
+
+.menu-card .card-text {
+  color: white;
+  font-size: 1rem;
+}
